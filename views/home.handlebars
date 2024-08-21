@@ -1,0 +1,35 @@
+{{!-- Layout for the home page --}}
+{{#if loggedIn}}
+  <nav>
+    <a href="/">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <button id="logout">Logout</button>
+  </nav>
+{{else}}
+  <nav>
+    <a href="/">Home</a>
+    <a href="/login">Login</a>
+  </nav>
+{{/if}}
+
+<h1>Welcome to the Tech Blog</h1>
+
+{{#each posts}}
+  <div class="post">
+    <h2><a href="/post/{{this.id}}">{{this.title}}</a></h2>
+    <p>By {{this.user.username}} on {{this.createdAt}}</p>
+    <p>{{this.content}}</p>
+  </div>
+{{/each}}
+
+{{#if loggedIn}}
+  <h3>Leave a comment</h3>
+  <textarea id="comment-text" placeholder="Add a comment"></textarea>
+  <button id="submit-comment">Submit Comment</button>
+{{else}}
+  <p><a href="/login">Log in</a> to leave a comment.</p>
+{{/if}}
+
+<script src="/js/logout.js"></script>
+<script src="/js/post.js"></script>
+
