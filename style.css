@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3e2cc;
+    margin: 0;
+}
+
+header {
+    background-color: #4e3d31;
+    color: #f0e3c4;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav a {
+    color: #f0e3c4;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    background-color: #e6efdc;
+    padding: 20px;
+    border: 2px solid #4e3d31;
+    border-radius: 10px;
+}
+
+h2 {
+    background-color: #4e3d31;
+    color: #f0e3c4;
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: right;
+    font-size: 0.9em;
+}
+
+#login-form {
+    background-color: #e6efdc;
+    padding: 20px;
+    border: 2px solid #4e3d31;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4e3d31;
+    color: #f0e3c4;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3c2d24;
+}
